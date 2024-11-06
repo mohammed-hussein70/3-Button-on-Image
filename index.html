@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Button on Image</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <h1>click on button to see Effect</h1>
+    <div class="container">
+      <img src="img_snow.jpg" alt="" width="100%" />
+      <button>Button</button>
+    </div>
+    <script>
+      let img = document.querySelector("img");
+      let btn = document.querySelector("button");
+      btn.onclick = function () {
+        if (img.src.includes("img_snow.jpg")) {
+          img.src = "2.jpg";
+        } else {
+          img.src = "img_snow.jpg";
+        }
+      };
+    </script>
+  </body>
+</html>
